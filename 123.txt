@@ -1,0 +1,31 @@
+깃 config설정
+git config --global user.name "Gil Dong"
+git config --global user.email example@example.com
+
+git remote add origin url
+
+branch
+삭제
+git branch -d {name}
+생성
+git branch {name}
+이동
+git checkout {name}
+
+깃허브 원격저장소 브렌치 삭제하기
+git push origin --delete {name}
+
+병합처리
+git merge {name}
+(합칠려는원본으로 브렌치를 옮겨간다음에 합칠 다른 브렌치를 불러올 것)
+
+git stash 임시저장하기
+git stash list를 사용하면 stash 목록이나옴
+git stash pop을 하면 맨마지막꺼를 불러오기
+git stash apply 하면 맨처음꺼를 불러오기
+git stash drop stash로 저장한거 지우기
+
+reset 되돌리기 기능
+git reset --soft [i] commit 직전으로 되돌리기 작업한거 남아있음
+git reset --mixed [i] commit 기본설정
+git reset --hard [i] commit이전으로돌리고 이후꺼 다지우기 
